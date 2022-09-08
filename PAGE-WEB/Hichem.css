@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:linear-gradient(#1a0818, #3e0428 );
+    height: 100vh;
+    font-size: 19px;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+}
+header .LOGO{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 10px;
+
+}
+header ul li{
+    margin: 15px;
+}
+header ul li a{
+    
+    padding: 6px 15px;
+    border-radius: 20px;
+
+}
+header ul li a:hover , .active{
+    background-color: #fff;
+    color:#3e0c2b
+
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom:0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top #1a0818,transparent);
+
+
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+
+.hichem{
+    font-size: 25px;
+    transform: translateY(-150px);
+
+}
+.content{
+    padding: 30px;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.content p{
+    margin: 20px;
+}
